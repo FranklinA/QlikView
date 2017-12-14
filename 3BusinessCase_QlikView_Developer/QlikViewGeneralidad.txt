@@ -1,0 +1,3 @@
+Qlikview Desktop
+Qlikview Server
+Qlikview Publisher
