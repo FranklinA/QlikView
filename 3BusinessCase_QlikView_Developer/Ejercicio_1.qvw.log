@@ -1,186 +1,193 @@
-﻿2017-12-15 17:50:04      Ejecución iniciada.
-2017-12-15 17:50:04      QlikView Desktop Version      12.10.0+2016-11-15 10:26:20.HEAD.Component.Version
-2017-12-15 17:50:04      CPU Target                    x64
-2017-12-15 17:50:04      Operating System              Windows 7 Professional Service Pack 1 (64 bit edition)
-2017-12-15 17:50:04      Wow64 mode                    Not using Wow64
-2017-12-15 17:50:04      Language                      0c0a Español (España, internacional) Spanish
-2017-12-15 17:50:04      Country                       34 España Spain
-2017-12-15 17:50:04      MDAC Version                  6.1.7601.17514
-2017-12-15 17:50:04      MDAC Full Install Version     6.1.7601.17514
-2017-12-15 17:50:04      PreferredCompression          2
-2017-12-15 17:50:04      EnableParallelReload          1
-2017-12-15 17:50:04      ParallelizeQvdLoads           1
-2017-12-15 17:50:04      AutoSaveAfterReload           0
-2017-12-15 17:50:04      BackupBeforeReload            1
-2017-12-15 17:50:04      EnableFlushLog                0
-2017-12-15 17:50:04      SaveInfoWhenSavingFile        0
-2017-12-15 17:50:04      UserLogfileCharset            65001
-2017-12-15 17:50:04      OdbcLoginTimeout              -1
-2017-12-15 17:50:04      OdbcConnectionTimeout         -1
-2017-12-15 17:50:04      LongestPossibleLine           1048576
-2017-12-15 17:50:04      MaxCoreMask                   -1
-2017-12-15 17:50:04      ScriptWantsDbWrite            false
-2017-12-15 17:50:04      ScriptWantsExe                false
-2017-12-15 17:50:04      LogFile CodePage Used:        65001
-2017-12-15 17:50:04      UseMemoryFillPattern          1
-2017-12-15 17:50:04      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
-2017-12-15 17:50:04      SequentialThreadCount         1365
-2017-12-15 17:50:04      NumberOfCores (effective)     1
-2017-12-15 17:50:04      ReloadCodebase                Classic
-2017-12-15 17:50:04      Reload Executed By            WIN-IIFNNL4CCJU\Franklin Angulo
-2017-12-15 17:50:04      Process Executing             QlikView Desktop
-2017-12-15 17:50:04      Process ID                    4348
-2017-12-15 17:50:04 0002 SET ThousandSep='.'
-2017-12-15 17:50:04 0003 SET DecimalSep=','
-2017-12-15 17:50:04 0004 SET MoneyThousandSep='.'
-2017-12-15 17:50:04 0005 SET MoneyDecimalSep=','
-2017-12-15 17:50:04 0006 SET MoneyFormat='#.##0,00 €;-#.##0,00 €'
-2017-12-15 17:50:04 0007 SET TimeFormat='h:mm:ss'
-2017-12-15 17:50:04 0008 SET DateFormat='DD/MM/YYYY'
-2017-12-15 17:50:04 0009 SET TimestampFormat='DD/MM/YYYY h:mm:ss[.fff]'
-2017-12-15 17:50:04 0010 SET FirstWeekDay=0
-2017-12-15 17:50:04 0011 SET BrokenWeeks=1
-2017-12-15 17:50:04 0012 SET ReferenceDay=0
-2017-12-15 17:50:04 0013 SET FirstMonthOfYear=1
-2017-12-15 17:50:04 0014 SET CollationLocale='es-ES'
-2017-12-15 17:50:04 0015 SET MonthNames='ene;feb;mar;abr;may;jun;jul;ago;sep;oct;nov;dic'
-2017-12-15 17:50:04 0016 SET LongMonthNames='enero;febrero;marzo;abril;mayo;junio;julio;agosto;septiembre;octubre;noviembre;diciembre'
-2017-12-15 17:50:04 0017 SET DayNames='lun;mar;mié;jue;vie;sáb;dom'
-2017-12-15 17:50:04 0018 SET LongDayNames='lunes;martes;miércoles;jueves;viernes;sábado;domingo'
-2017-12-15 17:50:04 0019 OLEDB CONNECT32 TO ***
-2017-12-15 17:50:04 0021 SET vRuta='C:\Users\Franklin Angulo\Documents\GitHub\QlikView\3BusinessCase_QlikView_Developer\'
-2017-12-15 17:50:04 0026 Pedidos:
-2017-12-15 17:50:04 0027 LOAD Carga,
-2017-12-15 17:50:04 0028     ClienteID,
-2017-12-15 17:50:04 0029     EmpleadoID,
-2017-12-15 17:50:04 0030     FechaPedido,
-2017-12-15 17:50:04 0031     
-2017-12-15 17:50:04 0032     
-2017-12-15 17:50:04 0033     
-2017-12-15 17:50:04 0034     ID,
-2017-12-15 17:50:04 0035     1 as ContadorPedidos,
-2017-12-15 17:50:04 0036     ClienteID as ContadorCliente,
-2017-12-15 17:50:04 0037     Id1,
-2017-12-15 17:50:04 0038     VendedorID
-2017-12-15 17:50:04 0039 SQL SELECT *
-2017-12-15 17:50:04 0040 FROM Pedidos
-2017-12-15 17:50:04      	9 campos encontrados: Carga, ClienteID, EmpleadoID, FechaPedido, ID, ContadorPedidos, ContadorCliente, Id1, VendedorID, 
-2017-12-15 17:50:04      6.571 registros leídos
-2017-12-15 17:50:04 0043 'Detalles Pedidos':
-2017-12-15 17:50:04 0044 LOAD Cantidad,
-2017-12-15 17:50:04 0045     Descuento,
-2017-12-15 17:50:04 0046     ID,
-2017-12-15 17:50:04 0047     Linea,
-2017-12-15 17:50:04 0048     PrecioUnidad,
-2017-12-15 17:50:04 0049     ProductoID,
-2017-12-15 17:50:04 0050     PrecioUnidad*Cantidad*(1-Descuento) as PrecioVenta
-2017-12-15 17:50:04 0051 SQL SELECT *
-2017-12-15 17:50:04 0052 FROM `Detalles Pedidos`
-2017-12-15 17:50:04      	7 campos encontrados: Cantidad, Descuento, ID, Linea, PrecioUnidad, ProductoID, PrecioVenta, 
-2017-12-15 17:50:04      17.032 registros leídos
-2017-12-15 17:50:04 0056 Clientes:
-2017-12-15 17:50:04 0057 LOAD Ciudad,
-2017-12-15 17:50:04 0058     ClienteID,
-2017-12-15 17:50:04 0059     DivisionID,
-2017-12-15 17:50:04 0060     NombreContacto,
-2017-12-15 17:50:04 0061     NombreEmpresa,
-2017-12-15 17:50:04 0062     Pais
-2017-12-15 17:50:04 0063 SQL SELECT *
-2017-12-15 17:50:04 0064 FROM Clientes
-2017-12-15 17:50:04      	6 campos encontrados: Ciudad, ClienteID, DivisionID, NombreContacto, NombreEmpresa, Pais, 
-2017-12-15 17:50:04      9 registros leídos
-2017-12-15 17:50:04 0067 Productos:
-2017-12-15 17:50:04 0068 LOAD CantidadPorUnidad,
-2017-12-15 17:50:04 0069     Categoria as CategoriaID,
-2017-12-15 17:50:04 0070     CosteUnidad,
-2017-12-15 17:50:04 0071     NombreProducto,
-2017-12-15 17:50:04 0072     PrecioUnidad as PrecioCatalogo,
-2017-12-15 17:50:04 0073     ProductoID,
-2017-12-15 17:50:04 0074     `Unidades en Stock`,
-2017-12-15 17:50:04 0075     `Unidades Pedidas`,
-2017-12-15 17:50:04 0076     Vendedor
-2017-12-15 17:50:04 0077 SQL SELECT *
-2017-12-15 17:50:04 0078 FROM Productos
-2017-12-15 17:50:04      	9 campos encontrados: CantidadPorUnidad, CategoriaID, CosteUnidad, NombreProducto, PrecioCatalogo, ProductoID, Unidades en Stock, Unidades Pedidas, Vendedor, 
-2017-12-15 17:50:04      69 registros leídos
-2017-12-15 17:50:04 0081 Categoria:
-2017-12-15 17:50:04 0082 LOAD `Categoria ID` as CategoriaID,
-2017-12-15 17:50:04 0083     `Descripción`,
-2017-12-15 17:50:04 0084     `Nombre Categoría`
-2017-12-15 17:50:04 0085 SQL SELECT *
-2017-12-15 17:50:04 0086 FROM Categorias
-2017-12-15 17:50:04      	3 campos encontrados: CategoriaID, Descripción, Nombre Categoría, 
-2017-12-15 17:50:04      8 registros leídos
-2017-12-15 17:50:04 0090 Empleados:
-2017-12-15 17:50:04 0091 LOAD EmpID as EmpleadoID, 
-2017-12-15 17:50:04 0092      
-2017-12-15 17:50:04 0093      Nombre & ' ' & Apellido as Nombre, 
-2017-12-15 17:50:04 0094      Categoría, 
-2017-12-15 17:50:04 0095      [Fecha contrato],
-2017-12-15 17:50:04 0096      Year([Fecha contrato]), 
-2017-12-15 17:50:04 0097      Oficina, 
-2017-12-15 17:50:04 0098      Extension, 
-2017-12-15 17:50:04 0099      [Informes a], 
-2017-12-15 17:50:04 0100      [Salario anual]
-2017-12-15 17:50:04 0101 FROM
-2017-12-15 17:50:04 0102 C:\Users\Franklin Angulo\Documents\GitHub\QlikView\3BusinessCase_QlikView_Developer\Empleados.xlsx
-2017-12-15 17:50:04 0103 (ooxml, embedded labels, table is Hoja1)
-2017-12-15 17:50:04      	9 campos encontrados: EmpleadoID, Nombre, Categoría, Fecha contrato, Year([Fecha contrato]), Oficina, Extension, Informes a, Salario anual, 
-2017-12-15 17:50:04      35 registros leídos
-2017-12-15 17:50:04 0106 Oficinas:
-2017-12-15 17:50:04 0107 LOAD Oficina, 
-2017-12-15 17:50:04 0108      OficinaDireccion, 
-2017-12-15 17:50:04 0109      OficinaCodigoPostal, 
-2017-12-15 17:50:04 0110      OficinaCiudad, 
-2017-12-15 17:50:04 0111      OficinaProvincia, 
-2017-12-15 17:50:04 0112      OficinaTelefono, 
-2017-12-15 17:50:04 0113      OficinaFax, 
-2017-12-15 17:50:04 0114      OficinaPais
-2017-12-15 17:50:04 0115 FROM
-2017-12-15 17:50:04 0116 
-2017-12-15 17:50:04 0117 C:\Users\Franklin Angulo\Documents\GitHub\QlikView\3BusinessCase_QlikView_Developer\Empleados.xlsx
-2017-12-15 17:50:04 0118 (ooxml, embedded labels, table is Hoja2)
-2017-12-15 17:50:04      	8 campos encontrados: Oficina, OficinaDireccion, OficinaCodigoPostal, OficinaCiudad, OficinaProvincia, OficinaTelefono, OficinaFax, OficinaPais, 
-2017-12-15 17:50:04      5 registros leídos
-2017-12-15 17:50:04 0122 Vendedores:
-2017-12-15 17:50:04 0123 LOAD EmpleadoID, 
-2017-12-15 17:50:04 0124      
-2017-12-15 17:50:04 0125      Nombre as NombreVendedor, 
-2017-12-15 17:50:04 0126      Categoría as CategoriaVendedor
-2017-12-15 17:50:04 0127 Resident Empleados
-2017-12-15 17:50:04 0128 
-2017-12-15 17:50:04 0129 where Categoría Like '*comercial*'
-2017-12-15 17:50:04      	3 campos encontrados: EmpleadoID, NombreVendedor, CategoriaVendedor, 
-2017-12-15 17:50:04      7 registros leídos
-2017-12-15 17:50:04 0132 MinMax:
-2017-12-15 17:50:04 0133 LOAD 
-2017-12-15 17:50:04 0134 Min(FechaPedido) as MinFecha, 
-2017-12-15 17:50:04 0135 Max(FechaPedido) as MaxFecha
-2017-12-15 17:50:04 0136 Resident Pedidos
-2017-12-15 17:50:04      	2 campos encontrados: MinFecha, MaxFecha, 
-2017-12-15 17:50:04      1 registros leídos
-2017-12-15 17:50:04 0138 Let vMinFecha=Num(Peek('MinFecha',0,'MinMax'))
-2017-12-15 17:50:04 0139 Let vMaxFecha=Num(Peek('MaxFecha',0,'MinMax'))
-2017-12-15 17:50:04 0140 Let vHoy=41002
-2017-12-15 17:50:04 0143 TempCal:
-2017-12-15 17:50:04 0144 LOAD
-2017-12-15 17:50:04 0145 date(39195+RowNo()-1) as TempDate
-2017-12-15 17:50:04 0146 AutoGenerate
-2017-12-15 17:50:04 0147 41002-39195+1
-2017-12-15 17:50:04      	1 campos encontrados: TempDate, 
-2017-12-15 17:50:04      1.808 registros leídos
-2017-12-15 17:50:04 0148 Drop Table MinMax
-2017-12-15 17:50:04 0151 CalendarioMaestro:
-2017-12-15 17:50:04 0152 LOAD
-2017-12-15 17:50:04 0153 TempDate as FechaPedido,
-2017-12-15 17:50:04 0154 Week(TempDate) as Semana,
-2017-12-15 17:50:04 0155 Year(TempDate) as Año,
-2017-12-15 17:50:04 0156 Month(TempDate) as Mes,
-2017-12-15 17:50:04 0157 Day(TempDate) as Dia,
-2017-12-15 17:50:04 0158 WeekDay(TempDate) as WeekDay
-2017-12-15 17:50:04 0159 Resident TempCal
-2017-12-15 17:50:04 0160 Order by TempDate ASC
-2017-12-15 17:50:04      	6 campos encontrados: FechaPedido, Semana, Año, Mes, Dia, WeekDay, 
-2017-12-15 17:50:04      1.808 registros leídos
-2017-12-15 17:50:04 0162 Drop Table TempCal
-2017-12-15 17:50:04      Ejecución finalizada.
+﻿2017-12-16 09:16:27      Ejecución iniciada.
+2017-12-16 09:16:27      QlikView Desktop Version      12.10.0+2016-11-15 10:26:20.HEAD.Component.Version
+2017-12-16 09:16:27      CPU Target                    x64
+2017-12-16 09:16:27      Operating System              Windows 7 Professional Service Pack 1 (64 bit edition)
+2017-12-16 09:16:27      Wow64 mode                    Not using Wow64
+2017-12-16 09:16:27      Language                      0c0a Español (España, internacional) Spanish
+2017-12-16 09:16:27      Country                       34 España Spain
+2017-12-16 09:16:27      MDAC Version                  6.1.7601.17514
+2017-12-16 09:16:27      MDAC Full Install Version     6.1.7601.17514
+2017-12-16 09:16:27      PreferredCompression          2
+2017-12-16 09:16:27      EnableParallelReload          1
+2017-12-16 09:16:27      ParallelizeQvdLoads           1
+2017-12-16 09:16:27      AutoSaveAfterReload           0
+2017-12-16 09:16:27      BackupBeforeReload            1
+2017-12-16 09:16:27      EnableFlushLog                0
+2017-12-16 09:16:27      SaveInfoWhenSavingFile        0
+2017-12-16 09:16:27      UserLogfileCharset            65001
+2017-12-16 09:16:27      OdbcLoginTimeout              -1
+2017-12-16 09:16:27      OdbcConnectionTimeout         -1
+2017-12-16 09:16:27      LongestPossibleLine           1048576
+2017-12-16 09:16:27      MaxCoreMask                   -1
+2017-12-16 09:16:27      ScriptWantsDbWrite            false
+2017-12-16 09:16:27      ScriptWantsExe                false
+2017-12-16 09:16:27      LogFile CodePage Used:        65001
+2017-12-16 09:16:27      UseMemoryFillPattern          1
+2017-12-16 09:16:27      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
+2017-12-16 09:16:27      SequentialThreadCount         1518
+2017-12-16 09:16:27      NumberOfCores (effective)     1
+2017-12-16 09:16:27      ReloadCodebase                Classic
+2017-12-16 09:16:27      Reload Executed By            WIN-IIFNNL4CCJU\Franklin Angulo
+2017-12-16 09:16:27      Process Executing             QlikView Desktop
+2017-12-16 09:16:27      Process ID                    4348
+2017-12-16 09:16:27 0002 SET ThousandSep='.'
+2017-12-16 09:16:27 0003 SET DecimalSep=','
+2017-12-16 09:16:27 0004 SET MoneyThousandSep='.'
+2017-12-16 09:16:27 0005 SET MoneyDecimalSep=','
+2017-12-16 09:16:27 0006 SET MoneyFormat='#.##0,00 €;-#.##0,00 €'
+2017-12-16 09:16:27 0007 SET TimeFormat='h:mm:ss'
+2017-12-16 09:16:27 0008 SET DateFormat='DD/MM/YYYY'
+2017-12-16 09:16:27 0009 SET TimestampFormat='DD/MM/YYYY h:mm:ss[.fff]'
+2017-12-16 09:16:27 0010 SET FirstWeekDay=0
+2017-12-16 09:16:27 0011 SET BrokenWeeks=1
+2017-12-16 09:16:27 0012 SET ReferenceDay=0
+2017-12-16 09:16:27 0013 SET FirstMonthOfYear=1
+2017-12-16 09:16:27 0014 SET CollationLocale='es-ES'
+2017-12-16 09:16:27 0015 SET MonthNames='ene;feb;mar;abr;may;jun;jul;ago;sep;oct;nov;dic'
+2017-12-16 09:16:27 0016 SET LongMonthNames='enero;febrero;marzo;abril;mayo;junio;julio;agosto;septiembre;octubre;noviembre;diciembre'
+2017-12-16 09:16:27 0017 SET DayNames='lun;mar;mié;jue;vie;sáb;dom'
+2017-12-16 09:16:27 0018 SET LongDayNames='lunes;martes;miércoles;jueves;viernes;sábado;domingo'
+2017-12-16 09:16:27 0019 OLEDB CONNECT32 TO ***
+2017-12-16 09:16:28 0021 SET vRuta='C:\Users\Franklin Angulo\Documents\GitHub\QlikView\3BusinessCase_QlikView_Developer\'
+2017-12-16 09:16:28 0026 Pedidos:
+2017-12-16 09:16:28 0027 LOAD Carga,
+2017-12-16 09:16:28 0028     ClienteID,
+2017-12-16 09:16:28 0029     EmpleadoID,
+2017-12-16 09:16:28 0030     FechaPedido,
+2017-12-16 09:16:28 0031     
+2017-12-16 09:16:28 0032     
+2017-12-16 09:16:28 0033     
+2017-12-16 09:16:28 0034     ID,
+2017-12-16 09:16:28 0035     1 as ContadorPedidos,
+2017-12-16 09:16:28 0036     ClienteID as ContadorCliente,
+2017-12-16 09:16:28 0037     Id1,
+2017-12-16 09:16:28 0038     VendedorID
+2017-12-16 09:16:28 0039 SQL SELECT *
+2017-12-16 09:16:28 0040 FROM Pedidos
+2017-12-16 09:16:28      	9 campos encontrados: Carga, ClienteID, EmpleadoID, FechaPedido, ID, ContadorPedidos, ContadorCliente, Id1, VendedorID, 
+2017-12-16 09:16:28      6.571 registros leídos
+2017-12-16 09:16:28 0043 'Detalles Pedidos':
+2017-12-16 09:16:28 0044 LOAD Cantidad,
+2017-12-16 09:16:28 0045     Descuento,
+2017-12-16 09:16:28 0046     ID,
+2017-12-16 09:16:28 0047     Linea,
+2017-12-16 09:16:28 0048     PrecioUnidad,
+2017-12-16 09:16:28 0049     ProductoID,
+2017-12-16 09:16:28 0050     PrecioUnidad*Cantidad*(1-Descuento) as PrecioVenta
+2017-12-16 09:16:28 0051 SQL SELECT *
+2017-12-16 09:16:28 0052 FROM `Detalles Pedidos`
+2017-12-16 09:16:28      	7 campos encontrados: Cantidad, Descuento, ID, Linea, PrecioUnidad, ProductoID, PrecioVenta, 
+2017-12-16 09:16:28      17.032 registros leídos
+2017-12-16 09:16:28 0056 Clientes:
+2017-12-16 09:16:28 0057 LOAD Ciudad,
+2017-12-16 09:16:28 0058     ClienteID,
+2017-12-16 09:16:28 0059     DivisionID,
+2017-12-16 09:16:28 0060     NombreContacto,
+2017-12-16 09:16:28 0061     NombreEmpresa,
+2017-12-16 09:16:28 0062     Pais
+2017-12-16 09:16:28 0063 SQL SELECT *
+2017-12-16 09:16:28 0064 FROM Clientes
+2017-12-16 09:16:28      	6 campos encontrados: Ciudad, ClienteID, DivisionID, NombreContacto, NombreEmpresa, Pais, 
+2017-12-16 09:16:28      9 registros leídos
+2017-12-16 09:16:28 0067 Productos:
+2017-12-16 09:16:28 0068 LOAD CantidadPorUnidad,
+2017-12-16 09:16:28 0069     Categoria as CategoriaID,
+2017-12-16 09:16:28 0070     CosteUnidad,
+2017-12-16 09:16:28 0071     NombreProducto,
+2017-12-16 09:16:28 0072     PrecioUnidad as PrecioCatalogo,
+2017-12-16 09:16:28 0073     ProductoID,
+2017-12-16 09:16:28 0074     `Unidades en Stock`,
+2017-12-16 09:16:28 0075     `Unidades Pedidas`,
+2017-12-16 09:16:28 0076     Vendedor
+2017-12-16 09:16:28 0077 SQL SELECT *
+2017-12-16 09:16:28 0078 FROM Productos
+2017-12-16 09:16:28      	9 campos encontrados: CantidadPorUnidad, CategoriaID, CosteUnidad, NombreProducto, PrecioCatalogo, ProductoID, Unidades en Stock, Unidades Pedidas, Vendedor, 
+2017-12-16 09:16:28      69 registros leídos
+2017-12-16 09:16:28 0081 Categoria:
+2017-12-16 09:16:28 0082 LOAD `Categoria ID` as CategoriaID,
+2017-12-16 09:16:28 0083     `Descripción`,
+2017-12-16 09:16:28 0084     `Nombre Categoría`
+2017-12-16 09:16:28 0085 SQL SELECT *
+2017-12-16 09:16:28 0086 FROM Categorias
+2017-12-16 09:16:28      	3 campos encontrados: CategoriaID, Descripción, Nombre Categoría, 
+2017-12-16 09:16:28      8 registros leídos
+2017-12-16 09:16:28 0090 Empleados:
+2017-12-16 09:16:28 0091 LOAD EmpID as EmpleadoID, 
+2017-12-16 09:16:28 0092      
+2017-12-16 09:16:28 0093      Nombre & ' ' & Apellido as Nombre, 
+2017-12-16 09:16:28 0094      Categoría, 
+2017-12-16 09:16:28 0095      [Fecha contrato],
+2017-12-16 09:16:28 0096      Year([Fecha contrato]), 
+2017-12-16 09:16:28 0097      Oficina, 
+2017-12-16 09:16:28 0098      Extension, 
+2017-12-16 09:16:28 0099      [Informes a], 
+2017-12-16 09:16:28 0100      [Salario anual]
+2017-12-16 09:16:28 0101 FROM
+2017-12-16 09:16:28 0102 C:\Users\Franklin Angulo\Documents\GitHub\QlikView\3BusinessCase_QlikView_Developer\Empleados.xlsx
+2017-12-16 09:16:28 0103 (ooxml, embedded labels, table is Hoja1)
+2017-12-16 09:16:28      	9 campos encontrados: EmpleadoID, Nombre, Categoría, Fecha contrato, Year([Fecha contrato]), Oficina, Extension, Informes a, Salario anual, 
+2017-12-16 09:16:28      35 registros leídos
+2017-12-16 09:16:28 0106 Oficinas:
+2017-12-16 09:16:28 0107 LOAD Oficina, 
+2017-12-16 09:16:28 0108      OficinaDireccion, 
+2017-12-16 09:16:28 0109      OficinaCodigoPostal, 
+2017-12-16 09:16:28 0110      OficinaCiudad, 
+2017-12-16 09:16:28 0111      OficinaProvincia, 
+2017-12-16 09:16:28 0112      OficinaTelefono, 
+2017-12-16 09:16:28 0113      OficinaFax, 
+2017-12-16 09:16:28 0114      OficinaPais
+2017-12-16 09:16:28 0115 FROM
+2017-12-16 09:16:28 0116 
+2017-12-16 09:16:28 0117 C:\Users\Franklin Angulo\Documents\GitHub\QlikView\3BusinessCase_QlikView_Developer\Empleados.xlsx
+2017-12-16 09:16:28 0118 (ooxml, embedded labels, table is Hoja2)
+2017-12-16 09:16:28      	8 campos encontrados: Oficina, OficinaDireccion, OficinaCodigoPostal, OficinaCiudad, OficinaProvincia, OficinaTelefono, OficinaFax, OficinaPais, 
+2017-12-16 09:16:28      5 registros leídos
+2017-12-16 09:16:28 0122 Vendedores:
+2017-12-16 09:16:28 0123 LOAD EmpleadoID, 
+2017-12-16 09:16:28 0124      
+2017-12-16 09:16:28 0125      Nombre as NombreVendedor, 
+2017-12-16 09:16:28 0126      Categoría as CategoriaVendedor
+2017-12-16 09:16:28 0127 Resident Empleados
+2017-12-16 09:16:28 0128 
+2017-12-16 09:16:28 0129 where Categoría Like '*comercial*'
+2017-12-16 09:16:28      	3 campos encontrados: EmpleadoID, NombreVendedor, CategoriaVendedor, 
+2017-12-16 09:16:28      7 registros leídos
+2017-12-16 09:16:28 0132 MinMax:
+2017-12-16 09:16:28 0133 LOAD 
+2017-12-16 09:16:28 0134 Min(FechaPedido) as MinFecha, 
+2017-12-16 09:16:28 0135 Max(FechaPedido) as MaxFecha
+2017-12-16 09:16:28 0136 Resident Pedidos
+2017-12-16 09:16:28      	2 campos encontrados: MinFecha, MaxFecha, 
+2017-12-16 09:16:28      1 registros leídos
+2017-12-16 09:16:28 0138 Let vMinFecha=Num(Peek('MinFecha',0,'MinMax'))
+2017-12-16 09:16:28 0139 Let vMaxFecha=Num(Peek('MaxFecha',0,'MinMax'))
+2017-12-16 09:16:28 0140 Let vHoy=41002
+2017-12-16 09:16:28 0143 TempCal:
+2017-12-16 09:16:28 0144 LOAD
+2017-12-16 09:16:28 0145 date(39195+RowNo()-1) as TempDate
+2017-12-16 09:16:28 0146 AutoGenerate
+2017-12-16 09:16:28 0147 41002-39195+1
+2017-12-16 09:16:28      	1 campos encontrados: TempDate, 
+2017-12-16 09:16:28      1.808 registros leídos
+2017-12-16 09:16:28 0148 Drop Table MinMax
+2017-12-16 09:16:28 0151 CalendarioMaestro:
+2017-12-16 09:16:28 0152 LOAD
+2017-12-16 09:16:28 0153 TempDate as FechaPedido,
+2017-12-16 09:16:28 0154 Week(TempDate) as Semana,
+2017-12-16 09:16:28 0155 Year(TempDate) as Año,
+2017-12-16 09:16:28 0156 Month(TempDate) as Mes,
+2017-12-16 09:16:28 0157 Day(TempDate) as Dia,
+2017-12-16 09:16:28 0158 WeekDay(TempDate) as WeekDay
+2017-12-16 09:16:28 0159 Resident TempCal
+2017-12-16 09:16:28 0160 Order by TempDate ASC
+2017-12-16 09:16:28      	6 campos encontrados: FechaPedido, Semana, Año, Mes, Dia, WeekDay, 
+2017-12-16 09:16:28      1.808 registros leídos
+2017-12-16 09:16:28 0162 Drop Table TempCal
+2017-12-16 09:16:28 0165 Divisiones:
+2017-12-16 09:16:28 0166 LOAD DivisionID,
+2017-12-16 09:16:28 0167 NombreID
+2017-12-16 09:16:28 0168 SQL SELECT *
+2017-12-16 09:16:28 0169 FROM Divisiones
+2017-12-16 09:16:28      	2 campos encontrados: DivisionID, NombreID, 
+2017-12-16 09:16:28      4 registros leídos
+2017-12-16 09:16:28      Ejecución finalizada.
